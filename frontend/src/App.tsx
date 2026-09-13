@@ -98,9 +98,10 @@ export const App: React.FC = () => {
       {/* Top Nav */}
       <header className="top-nav">
         <div className="brand-area">
+          <div className="brand-badge">FINTECH AI</div>
           <div>
             <div className="brand-title">Buy or Wait?</div>
-            <div className="brand-tagline">Know what you can afford before you spend.</div>
+            <div className="brand-tagline">Know what you can afford — before you spend.</div>
           </div>
         </div>
         <div className="nav-links">
@@ -120,7 +121,7 @@ export const App: React.FC = () => {
 
       {/* Hero Header */}
       <section className="hero-section">
-        <h1 className="hero-headline">Should you buy it now or wait?</h1>
+        <h1 className="hero-headline">Should you buy it now — or wait?</h1>
         <p className="hero-subtitle">
           See how a purchase could affect your next 90 days before you commit.
         </p>
