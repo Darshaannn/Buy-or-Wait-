@@ -1,0 +1,224 @@
+[
+  {
+    "scenario_id": "scenario_01_safe_now",
+    "title": "New Laptop for Freelance Work",
+    "outcome": "safe_now",
+    "tagline": "Comfortable balance with healthy cash buffer for instant purchase",
+    "data": {
+      "purchase": {
+        "amount": "45000.00",
+        "currency": "INR",
+        "category": "electronics",
+        "desired_date": "2026-10-15",
+        "request_date": "2026-09-15",
+        "allows_partial_payment": true,
+        "description": "High performance developer laptop"
+      },
+      "profile": {
+        "available_balance": "165000.00",
+        "minimum_balance_to_protect": "50000.00",
+        "home_currency": "INR",
+        "monthly_income": "120000.00",
+        "income_day_of_month": 1,
+        "payment_methods_accepted": ["full_payment", "partial_payment", "installments"],
+        "max_installment_months": 6,
+        "protected_categories": ["rent", "loan"],
+        "reducible_categories": ["dining", "groceries"],
+        "stoppable_categories": ["streaming"]
+      },
+      "commitments": [
+        {"name": "Apartment Rent", "amount": "30000.00", "frequency": "monthly", "day_of_month": 5, "category": "rent", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Groceries & Supplies", "amount": "15000.00", "frequency": "monthly", "day_of_month": 10, "category": "groceries", "direction": "debit", "flexibility": "reducible", "minimum_allowed_amount": "10000.00", "currency": "INR"},
+        {"name": "Broadband & Utilities", "amount": "4500.00", "frequency": "monthly", "day_of_month": 15, "category": "utilities", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Streaming & Entertainment", "amount": "1800.00", "frequency": "monthly", "day_of_month": 20, "category": "streaming", "direction": "debit", "flexibility": "stoppable", "currency": "INR"}
+      ],
+      "payment_options": []
+    }
+  },
+  {
+    "scenario_id": "scenario_02_affordable_later",
+    "title": "Home Audio System Upgrade",
+    "outcome": "affordable_later",
+    "tagline": "Today's balance is tight, but next salary deposit unlocks full payment safely",
+    "data": {
+      "purchase": {
+        "amount": "38000.00",
+        "currency": "INR",
+        "category": "home_entertainment",
+        "desired_date": "2026-10-25",
+        "request_date": "2026-09-20",
+        "allows_partial_payment": false,
+        "description": "Premium surround sound speaker setup"
+      },
+      "profile": {
+        "available_balance": "58000.00",
+        "minimum_balance_to_protect": "40000.00",
+        "home_currency": "INR",
+        "monthly_income": "85000.00",
+        "income_day_of_month": 1,
+        "payment_methods_accepted": ["full_payment"],
+        "max_installment_months": 3,
+        "protected_categories": ["rent"],
+        "reducible_categories": ["dining"],
+        "stoppable_categories": ["streaming"]
+      },
+      "commitments": [
+        {"name": "House Rent", "amount": "22000.00", "frequency": "monthly", "day_of_month": 2, "category": "rent", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Daily Transit Pass", "amount": "3000.00", "frequency": "monthly", "day_of_month": 5, "category": "transport", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Supermarket Basket", "amount": "12000.00", "frequency": "monthly", "day_of_month": 12, "category": "groceries", "direction": "debit", "flexibility": "fixed", "currency": "INR"}
+      ],
+      "payment_options": []
+    }
+  },
+  {
+    "scenario_id": "scenario_03_installments",
+    "title": "Ergonomic Office Setup & Standing Desk",
+    "outcome": "affordable_with_plan",
+    "tagline": "Zero-fee 3-month installment plan preserves emergency savings",
+    "data": {
+      "purchase": {
+        "amount": "30000.00",
+        "currency": "INR",
+        "category": "furniture",
+        "desired_date": "2026-12-20",
+        "request_date": "2026-09-15",
+        "allows_partial_payment": false,
+        "description": "Motorized standing desk with ergonomic chair"
+      },
+      "profile": {
+        "available_balance": "70000.00",
+        "minimum_balance_to_protect": "40000.00",
+        "home_currency": "INR",
+        "monthly_income": "75000.00",
+        "income_day_of_month": 1,
+        "payment_methods_accepted": ["installments"],
+        "max_installment_months": 6,
+        "protected_categories": ["rent", "loan"],
+        "reducible_categories": ["dining"],
+        "stoppable_categories": []
+      },
+      "commitments": [
+        {"name": "Rent", "amount": "25000.00", "frequency": "monthly", "day_of_month": 3, "category": "rent", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Vehicle Loan EMI", "amount": "10000.00", "frequency": "monthly", "day_of_month": 8, "category": "loan", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Groceries", "amount": "14000.00", "frequency": "monthly", "day_of_month": 15, "category": "groceries", "direction": "debit", "flexibility": "fixed", "currency": "INR"}
+      ],
+      "payment_options": [
+        {
+          "payment_option_id": "opt_3_month_split",
+          "payment_method": "installments",
+          "financing_fee": "0.00",
+          "total_payable_amount": "30000.00",
+          "number_of_payments": 3,
+          "first_payment_date": "2026-09-15",
+          "payment_frequency_days": 30,
+          "payment_amount": "10000.00"
+        }
+      ]
+    }
+  },
+  {
+    "scenario_id": "scenario_04_partial_payment",
+    "title": "Annual Professional Certification Exam",
+    "outcome": "affordable_with_plan",
+    "tagline": "Pay safe portion today, schedule the remainder automatically post-payday",
+    "data": {
+      "purchase": {
+        "amount": "25000.00",
+        "currency": "INR",
+        "category": "education",
+        "desired_date": "2026-10-20",
+        "request_date": "2026-09-15",
+        "allows_partial_payment": true,
+        "description": "Cloud architect professional certification voucher"
+      },
+      "profile": {
+        "available_balance": "50000.00",
+        "minimum_balance_to_protect": "35000.00",
+        "home_currency": "INR",
+        "monthly_income": "70000.00",
+        "income_day_of_month": 1,
+        "payment_methods_accepted": ["partial_payment"],
+        "max_installment_months": 3,
+        "protected_categories": ["rent"],
+        "reducible_categories": ["dining"],
+        "stoppable_categories": []
+      },
+      "commitments": [
+        {"name": "Rental Accommodation", "amount": "22000.00", "frequency": "monthly", "day_of_month": 2, "category": "rent", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Household Essentials", "amount": "11000.00", "frequency": "monthly", "day_of_month": 18, "category": "groceries", "direction": "debit", "flexibility": "fixed", "currency": "INR"}
+      ],
+      "payment_options": []
+    }
+  },
+  {
+    "scenario_id": "scenario_05_spending_reduction",
+    "title": "Mountain Bike for Fitness Commute",
+    "outcome": "affordable_with_plan",
+    "tagline": "Affordable by trimming flexible dining and pausing streaming subscription",
+    "data": {
+      "purchase": {
+        "amount": "28000.00",
+        "currency": "INR",
+        "category": "sports",
+        "desired_date": "2026-09-25",
+        "request_date": "2026-09-05",
+        "allows_partial_payment": false,
+        "description": "Lightweight alloy commuter bicycle"
+      },
+      "profile": {
+        "available_balance": "56000.00",
+        "minimum_balance_to_protect": "20000.00",
+        "home_currency": "INR",
+        "monthly_income": "60000.00",
+        "income_day_of_month": 1,
+        "payment_methods_accepted": ["full_payment"],
+        "max_installment_months": 3,
+        "protected_categories": ["rent"],
+        "reducible_categories": ["dining"],
+        "stoppable_categories": ["streaming"]
+      },
+      "commitments": [
+        {"name": "Room Rent", "amount": "20000.00", "frequency": "monthly", "day_of_month": 3, "category": "rent", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Weekend Dining & Cafes", "amount": "9000.00", "frequency": "monthly", "day_of_month": 10, "category": "dining", "direction": "debit", "flexibility": "reducible", "minimum_allowed_amount": "4000.00", "currency": "INR"},
+        {"name": "Streaming Clubs", "amount": "2500.00", "frequency": "monthly", "day_of_month": 12, "category": "streaming", "direction": "debit", "flexibility": "stoppable", "currency": "INR"},
+        {"name": "Groceries", "amount": "4000.00", "frequency": "monthly", "day_of_month": 28, "category": "groceries", "direction": "debit", "flexibility": "fixed", "currency": "INR"}
+      ],
+      "payment_options": []
+    }
+  },
+  {
+    "scenario_id": "scenario_06_not_affordable",
+    "title": "Luxury Resort Vacation Booking",
+    "outcome": "not_affordable",
+    "tagline": "Exceeds 90-day safe cash flow capacity and severely breaches emergency safety reserve",
+    "data": {
+      "purchase": {
+        "amount": "140000.00",
+        "currency": "INR",
+        "category": "travel",
+        "desired_date": "2026-10-10",
+        "request_date": "2026-09-15",
+        "allows_partial_payment": true,
+        "description": "5-star international beach resort package"
+      },
+      "profile": {
+        "available_balance": "55000.00",
+        "minimum_balance_to_protect": "45000.00",
+        "home_currency": "INR",
+        "monthly_income": "65000.00",
+        "income_day_of_month": 1,
+        "payment_methods_accepted": ["full_payment", "partial_payment"],
+        "max_installment_months": 3,
+        "protected_categories": ["rent", "loan"],
+        "reducible_categories": ["dining"],
+        "stoppable_categories": ["streaming"]
+      },
+      "commitments": [
+        {"name": "Apartment Rent", "amount": "25000.00", "frequency": "monthly", "day_of_month": 2, "category": "rent", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Education Loan EMI", "amount": "15000.00", "frequency": "monthly", "day_of_month": 7, "category": "loan", "direction": "debit", "flexibility": "fixed", "currency": "INR"},
+        {"name": "Groceries & Household", "amount": "12000.00", "frequency": "monthly", "day_of_month": 15, "category": "groceries", "direction": "debit", "flexibility": "fixed", "currency": "INR"}
+      ],
+      "payment_options": []
+    }
+  }
+]
