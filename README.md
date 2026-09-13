@@ -150,10 +150,16 @@ The application ships with 6 curated synthetic scenarios demonstrating different
 
 ## Deployment Options
 
-* **Frontend**: Ready for deployment to **Vercel** or **Netlify**. Set `VITE_API_BASE_URL` to point to the backend URL.
-* **Backend**: Ready for deployment to **Render** or **Railway**.
-  * Start command: `uvicorn backend.app.api:app --host 0.0.0.0 --port $PORT`
-  * Set `FRONTEND_ORIGIN` to your deployed frontend domain.
+* **Frontend**: Deploy to **Vercel** or **Netlify**.
+  * Root Directory: `frontend`
+  * Build Command: `npm run build`
+  * Output Directory: `dist`
+  * Environment Variable: `VITE_API_BASE_URL` (set to your deployed backend URL, e.g., `https://buy-or-wait-api.onrender.com`)
+* **Backend**: Deploy to **Render** or **Railway**.
+  * Root Directory: `backend`
+  * Build Command: `pip install -r requirements.txt`
+  * Start Command: `uvicorn app.api:app --host 0.0.0.0 --port $PORT`
+  * Environment Variable: `FRONTEND_ORIGIN` (set to your deployed frontend domain, e.g., `https://buy-or-wait.vercel.app`)
 
 ---
 

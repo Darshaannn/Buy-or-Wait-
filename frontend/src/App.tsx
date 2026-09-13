@@ -106,7 +106,7 @@ export const App: React.FC = () => {
         </div>
         <div className="nav-links">
           <a
-            href="https://github.com"
+            href="https://github.com/Darshaannn/Buy-or-Wait-"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-btn"

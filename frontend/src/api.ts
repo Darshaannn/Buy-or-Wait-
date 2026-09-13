@@ -28,7 +28,7 @@ export async function analyzePurchase(payload: AnalyzeRequest): Promise<Decision
   });
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: 'Analysis failed' }));
-    throw new Error(err.detail || 'Analysis failed');
+    throw new Error(err.message || err.detail || 'Analysis failed');
   }
   return res.json();
 }
